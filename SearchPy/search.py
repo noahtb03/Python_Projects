@@ -121,6 +121,7 @@ if prob == '1':
   Searcher = Search(problem=problem)
   Searcher.search(UCS = UCS)
 
+#Do sliding problem
 else:
   problem = SlidingPuzzle(None, None)
   problem.get_width()
