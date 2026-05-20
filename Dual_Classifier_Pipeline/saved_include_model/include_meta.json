@@ -1,0 +1,10 @@
+{
+  "best_val_f1": 0.45454545454545453,
+  "best_threshold": 0.5499999999999999,
+  "max_len": 512,
+  "model_name": "bert-base-uncased",
+  "class_counts_train": [
+    309,
+    91
+  ]
+}
