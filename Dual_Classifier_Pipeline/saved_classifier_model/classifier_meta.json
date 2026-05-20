@@ -1,0 +1,101 @@
+{
+  "best_avg_f1": 0.4566755272549908,
+  "max_len": 512,
+  "model_name": "bert-base-uncased",
+  "task_num_labels": {
+    "ConcernRaised": 2,
+    "AgentFollowedProtocol": 2,
+    "EscalationNeeded": 2,
+    "ReferencedPriorContact": 2,
+    "ResolvedInSession": 2,
+    "SystemError": 2,
+    "ContactReason": 12,
+    "ConcernDetails": 5,
+    "IssueCategory": 5
+  },
+  "label_maps": {
+    "ConcernRaised": {
+      "Yes": 0,
+      "No": 1
+    },
+    "AgentFollowedProtocol": {
+      "Yes": 0,
+      "No": 1
+    },
+    "EscalationNeeded": {
+      "Yes": 0,
+      "No": 1
+    },
+    "ReferencedPriorContact": {
+      "Yes": 0,
+      "No": 1
+    },
+    "ResolvedInSession": {
+      "Yes": 0,
+      "No": 1
+    },
+    "SystemError": {
+      "Yes": 0,
+      "No": 1
+    },
+    "ContactReason": {
+      "Account Access Issue": 0,
+      "Billing Question": 1,
+      "Cancellation Request": 2,
+      "Complaint": 3,
+      "Data Export Request": 4,
+      "General Inquiry": 5,
+      "Password Reset": 6,
+      "Payment Update": 7,
+      "Plan Change Request": 8,
+      "Product Information": 9,
+      "Refund Request": 10,
+      "Technical Support": 11
+    },
+    "ConcernDetails": {
+      "Billing error": 0,
+      "Long wait time": 1,
+      "Missing feature": 2,
+      "Privacy concern": 3,
+      "Service outage": 4
+    },
+    "IssueCategory": {
+      "Account": 0,
+      "Billing": 1,
+      "Product": 2,
+      "Service": 3,
+      "Technical": 4
+    }
+  },
+  "binary_fields": [
+    "ConcernRaised",
+    "AgentFollowedProtocol",
+    "EscalationNeeded",
+    "ReferencedPriorContact",
+    "ResolvedInSession",
+    "SystemError"
+  ],
+  "categorical_fields": [
+    "ContactReason",
+    "ConcernDetails",
+    "IssueCategory"
+  ],
+  "all_fields": [
+    "ConcernRaised",
+    "AgentFollowedProtocol",
+    "EscalationNeeded",
+    "ReferencedPriorContact",
+    "ResolvedInSession",
+    "SystemError",
+    "ContactReason",
+    "ConcernDetails",
+    "IssueCategory"
+  ],
+  "conditional_fields": {
+    "ConcernDetails": [
+      "ConcernRaised",
+      "No"
+    ]
+  },
+  "epoch": 2
+}
